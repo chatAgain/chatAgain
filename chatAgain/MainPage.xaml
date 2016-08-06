@@ -7,9 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Foreground="#FF0DB0E0">
 
-    <Grid Background="{ThemeResource ListPickerFlyoutPresenterSelectedItemForegroundThemeBrush}">
-        <Rectangle Fill="#FF0505DE" Grid.Row="2" HorizontalAlignment="Left" Height="100" Margin="0,199,0,0" Stroke="Black" VerticalAlignment="Top" Width="360"/>
-        <Rectangle Fill="#FF0606E4" Grid.Row="3" HorizontalAlignment="Left" Height="100" Margin="0,370,0,0" Stroke="Black" VerticalAlignment="Top" Width="360"/>
+    <Grid Background="{ThemeResource ListPickerFlyoutPresenterSelectedItemForegroundThemeBrush}" >
+        <Rectangle Name="Rectangle1"  Fill="#FF0505DE" Grid.Row="2" HorizontalAlignment="Left" Height="100" Margin="0,199,0,0" Stroke="Black" VerticalAlignment="Top" Width="360" PointerPressed="Rectangle1_PointerPressed"/>
+        <Rectangle Name="Rectangle2" Fill="#FF0606E4" Grid.Row="3" HorizontalAlignment="Left" Height="100" Margin="0,370,0,0" Stroke="Black" VerticalAlignment="Top" Width="360" PointerPressed="Rectangle2_PointerPressed"/>
         <TextBlock x:Name="textBlock" Grid.Row="1" HorizontalAlignment="Left" Margin="43,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="222" Foreground="White" FontSize="24" FontFamily="Rockwell Extra Bold">
             <Run Text="欢迎来到"/>
             <LineBreak/>
