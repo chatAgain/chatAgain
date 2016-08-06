@@ -47,6 +47,13 @@ namespace chatAgain
                     this.Frame.Navigate(typeof(practicePage));
                 }
             }
+            else if (main.IsSelected)
+            {
+                if (this.Frame != null)
+                {
+                    this.Frame.Navigate(typeof(MainPage));
+                }
+            }
         }
     }
 }

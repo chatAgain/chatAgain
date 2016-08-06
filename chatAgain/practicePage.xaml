@@ -19,6 +19,12 @@
         <SplitView Name ="SpVi" Grid.Row="1" DisplayMode="Overlay"  OpenPaneLength="200" CompactPaneLength="56" HorizontalAlignment="Left" PaneBackground="LightGray">
             <SplitView.Pane>
                 <ListBox SelectionMode="Single" Name="ListBox" SelectionChanged="listChange">
+                    <ListBoxItem Name="main">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE734;" FontSize="36"  />
+                            <TextBlock Text="主页" FontSize="24" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
                     <ListBoxItem Name="chat">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE734;" FontSize="36"  />
