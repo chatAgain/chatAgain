@@ -27,7 +27,15 @@ namespace chatAgain
             this.InitializeComponent();
         }
 
-        private void Rectangle2_PointerPressed(object sender, PointerRoutedEventArgs e)
+        private void Rectangle1_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (this.Frame != null)
+            {
+                this.Frame.Navigate(typeof(chatPage));
+            }
+        }
+
+        private void Rectangle2_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (this.Frame != null)
             {
@@ -35,12 +43,5 @@ namespace chatAgain
             }
         }
 
-        private void Rectangle1_PointerPressed(object sender, PointerRoutedEventArgs e)
-        {
-            if (this.Frame != null)
-            {
-                this.Frame.Navigate(typeof(chatPage));
-            }
-        }
     }
 }
