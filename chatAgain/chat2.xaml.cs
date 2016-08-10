@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System.Threading;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -20,13 +22,29 @@ namespace chatAgain
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class chatPage : Page
+    public sealed partial class chat2 : Page
     {
-        public chatPage()
+        public chat2()
         {
             this.InitializeComponent();
+
+            TimeSpan delay = TimeSpan.FromSeconds(2.5);
+            ThreadPoolTimer DelayTimer = 
+                ThreadPoolTimer.CreateTimer(async (source) =>
+                {
+                    await Dispatcher.RunAsync(CoreDispatcherPriority.High, () =>
+                      {
+                          if (this.Frame != null)
+                          {
+                              this.Frame.Navigate(typeof(chat3));
+                          }
+                      }
+                    );
+
+                }, delay);
         }
-        private void HamClick(object sender, RoutedEventArgs e)
+
+          private void HamClick(object sender, RoutedEventArgs e)
         {
             SpVi.IsPaneOpen = !SpVi.IsPaneOpen;
         }
@@ -55,12 +73,11 @@ namespace chatAgain
                 }
             }
         }
-
         private void Ellipse_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (this.Frame != null)
             {
-                this.Frame.Navigate(typeof(chat2));
+                this.Frame.Navigate(typeof(MainPage));
             }
         }
     }

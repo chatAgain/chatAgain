@@ -20,12 +20,14 @@ namespace chatAgain
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class chatPage : Page
+    public sealed partial class chat3 : Page
     {
-        public chatPage()
+        public chat3()
         {
             this.InitializeComponent();
         }
+
+
         private void HamClick(object sender, RoutedEventArgs e)
         {
             SpVi.IsPaneOpen = !SpVi.IsPaneOpen;
@@ -55,13 +57,7 @@ namespace chatAgain
                 }
             }
         }
-
-        private void Ellipse_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            if (this.Frame != null)
-            {
-                this.Frame.Navigate(typeof(chat2));
-            }
-        }
     }
+
+
 }

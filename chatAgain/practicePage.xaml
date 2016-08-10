@@ -12,29 +12,26 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <RelativePanel>
-            <Button Name="HamButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="36" Click="HamClick"/>
-            <TextBlock FontSize="25" HorizontalAlignment="Center" Margin="100,10,0,0" Text="chatAgain" VerticalAlignment="Top"/>
+        <RelativePanel Background="#FF2C2C2C">
+            <Button Name="HamButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="36" Click="HamClick" Foreground="White" Background="#FF2C2C2C"/>
+            <TextBlock FontSize="25" HorizontalAlignment="Center" Margin="65,10,38,0" Text="CHATAGAIN" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Semibold"/>
         </RelativePanel>
-        <SplitView Name ="SpVi" Grid.Row="1" DisplayMode="Overlay"  OpenPaneLength="200" CompactPaneLength="56" HorizontalAlignment="Left" PaneBackground="LightGray">
+        <SplitView Name ="SpVi" Grid.Row="1" DisplayMode="Overlay" OpenPaneLength="200" CompactPaneLength="56" HorizontalAlignment="Left" PaneBackground="LightGray">
             <SplitView.Pane>
-                <ListBox SelectionMode="Single" Name="ListBox" SelectionChanged="listChange">
+                <ListBox Background="#FF2C2C2C" SelectionMode="Single" Name="ListBox" SelectionChanged="listChange">
                     <ListBoxItem Name="main">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE734;" FontSize="36"  />
-                            <TextBlock Text="主页" FontSize="24" Margin="20,0,0,0"/>
+                            <TextBlock Text="主页" FontSize="30" Margin="20,0,0,0" FontFamily="Microsoft YaHei" SelectionHighlightColor="{x:Null}" Foreground="#FFFFFF"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="chat">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE734;" FontSize="36"  />
-                            <TextBlock Text="实时聊天" FontSize="24" Margin="20,0,0,0"/>
+                            <TextBlock Text="实时聊天" FontSize="30" Margin="20,0,0,0" Foreground="#FFFFFF" FontFamily="Microsoft YaHei"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="practice">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE734;" FontSize="36"  />
-                            <TextBlock Text="发音训练" FontSize="24" Margin="20,0,0,0"/>
+                            <TextBlock Text="发音训练" FontSize="30" Margin="20,0,0,0" Foreground="#FFFFFF" FontFamily="Microsoft YaHei"/>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>

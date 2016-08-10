@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="chatAgain.chatPage"
+    x:Class="chatAgain.chat2"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:chatAgain"
@@ -9,7 +9,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/Projects for Accessbility-02.png"/>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Projects for Accessbility-03.png"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
