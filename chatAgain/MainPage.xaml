@@ -7,16 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Foreground="#FF0DB0E0">
 
-    <Grid Background="{ThemeResource ListPickerFlyoutPresenterSelectedItemForegroundThemeBrush}" >
-        <Rectangle Name="Rectangle1"  Fill="#FF0505DE" Grid.Row="2" HorizontalAlignment="Left" Height="100" Margin="0,199,0,0" Stroke="Black" VerticalAlignment="Top" Width="360" Tapped="Rectangle1_Tapped"/>
-        <Rectangle Name="Rectangle2" Fill="#FF0606E4" Grid.Row="3" HorizontalAlignment="Left" Height="100" Margin="0,370,0,0" Stroke="Black" VerticalAlignment="Top" Width="360" Tapped="Rectangle2_Tapped"/>
-        <TextBlock x:Name="textBlock" Grid.Row="1" HorizontalAlignment="Left" Margin="43,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="222" Foreground="White" FontSize="24" FontFamily="Rockwell Extra Bold">
-            <Run Text="欢迎来到"/>
-            <LineBreak/>
-            <Run Text="chatAgain"/>
-        </TextBlock>
-        <TextBlock x:Name="textBlock1" Grid.Row="2" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,231,10,0" TextWrapping="Wrap" Text="实时聊天" Height="37" Width="350" Foreground="White" FontSize="22" VerticalAlignment="Top" Tapped="Rectangle1_Tapped"/>
-        <TextBlock x:Name="textBlock1_Copy" Grid.Row="3" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,402,0,0" TextWrapping="Wrap" Text="发声练习" Height="37" Width="360" Foreground="White" FontSize="22" VerticalAlignment="Top" Tapped="Rectangle2_Tapped"/>
+    <Grid >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Projects for Accessbility-01.png"/>
+        </Grid.Background>
+        <Rectangle HorizontalAlignment="Left" Height="115" Margin="69,345,0,0" VerticalAlignment="Top" Width="100" Tapped="NavigateToChat" Fill="#FFB26767" Opacity="0"/>
+        <Rectangle HorizontalAlignment="Left" Height="115" Margin="189,345,0,0" VerticalAlignment="Top" Width="105" Tapped="NavigateToPractice" Fill="#FFC36464" Opacity="0"/>
 
     </Grid>
 </Page>

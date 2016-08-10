@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,23 +26,32 @@ namespace chatAgain
         public MainPage()
         {
             this.InitializeComponent();
+
+            StatusBar statusBar = Windows.UI.ViewManagement.StatusBar.GetForCurrentView();
+            statusBar.HideAsync();
+
         }
 
-        private void Rectangle1_Tapped(object sender, TappedRoutedEventArgs e)
+        private void NavigateToChat(object sender, TappedRoutedEventArgs e)
         {
             if (this.Frame != null)
+
             {
+
                 this.Frame.Navigate(typeof(chatPage));
+
             }
         }
 
-        private void Rectangle2_Tapped(object sender, TappedRoutedEventArgs e)
+        private void NavigateToPractice(object sender, TappedRoutedEventArgs e)
         {
             if (this.Frame != null)
+
             {
+
                 this.Frame.Navigate(typeof(practicePage));
+
             }
         }
-
     }
 }
