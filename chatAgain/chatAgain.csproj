@@ -111,6 +111,9 @@
       <DependentUpon>practicePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qingjing1.xaml.cs">
+      <DependentUpon>qingjing1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="qingjingmoni.xaml.cs">
       <DependentUpon>qingjingmoni.xaml</DependentUpon>
     </Compile>
@@ -122,12 +125,15 @@
     <None Include="chatAgain_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\button_start-01.png" />
+    <Content Include="Assets\button_start-02.png" />
     <Content Include="Assets\Projects for Accessbility-01.png" />
     <Content Include="Assets\Projects for Accessbility-02.png" />
     <Content Include="Assets\Projects for Accessbility-03.png" />
     <Content Include="Assets\Projects for Accessbility-04.png" />
     <Content Include="Assets\Projects for Accessbility-07.png" />
     <Content Include="Assets\Projects for Accessbility-08.png" />
+    <Content Include="Assets\Projects for Accessbility-09.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -159,6 +165,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="practicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="qingjing1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

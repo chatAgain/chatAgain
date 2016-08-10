@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -20,13 +21,12 @@ namespace chatAgain
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class qingjingmoni : Page
+    public sealed partial class qingjing1 : Page
     {
-        public qingjingmoni()
+        public qingjing1()
         {
             this.InitializeComponent();
         }
-
 
         private void HamClick(object sender, RoutedEventArgs e)
         {
@@ -58,12 +58,16 @@ namespace chatAgain
             }
         }
 
-        private void Rectangle_Tapped(object sender, TappedRoutedEventArgs e)
+        private void image_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            if (this.Frame != null)
-            {
-                this.Frame.Navigate(typeof(qingjing1));
-            }
+            image.Source = new BitmapImage(new Uri("ms-appx:///Assets/button_start-02.png"));
+            textBlock.Text = "跟读中……";
+        }
+
+        private void image_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            image.Source = new BitmapImage(new Uri("ms-appx:///Assets/button_start-01.png"));
+            textBlock.Text = "按下按钮，跟读以下文字";
         }
     }
 }
