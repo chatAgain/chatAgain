@@ -16,7 +16,7 @@
             </NavigationThemeTransition>
         </TransitionCollection>
     </Page.Transitions>
-    
+
     <Grid>
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/Projects for Accessbility-09.png"/>
@@ -53,9 +53,16 @@
                 <Grid>
                     <Image x:Name="image" HorizontalAlignment="Left" Height="40" Margin="160,408,0,0" Grid.Row="1" VerticalAlignment="Top" Width="40" Source="Assets/button_start-01.png" PointerPressed="image_PointerPressed" PointerReleased="image_PointerReleased"/>
                     <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="72,453,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="按下按钮，跟读以下文字" VerticalAlignment="Top" Width="220" Height="40" Foreground="White" FontFamily="Microsoft YaHei Light" FontSize="16"/>
+                    <Image x:Name="image1" HorizontalAlignment="Left" Height="62" Margin="177,325,0,0" VerticalAlignment="Top" Width="7" Source="Assets/sound.PNG"/>
                 </Grid>
             </SplitView.Content>
         </SplitView>
-        
+
     </Grid>
+    <!--<Storyboard x:Name="myStoryboard">
+        <DoubleAnimation
+                            Storyboard.TargetName="image1"
+                            Storyboard.TargetProperty="Height"
+                            From="62" To="20" Duration="0:0:1"/>
+    </Storyboard>-->
 </Page>

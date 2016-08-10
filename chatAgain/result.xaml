@@ -50,9 +50,7 @@
                     </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
-            <SplitView.Content>
-                <Ellipse Fill="#FFC36464" HorizontalAlignment="Left" Height="67" Margin="225,388,0,0" Grid.Row="1" VerticalAlignment="Top" Width="67" Opacity="0" Tapped="Ellipse_Tapped"/>
-            </SplitView.Content>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="592" VerticalAlignment="Top" Width="200" Source="Assets/9cRRyKRoi.gif"/>
         </SplitView>
     </Grid>
 </Page>

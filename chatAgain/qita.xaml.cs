@@ -20,9 +20,9 @@ namespace chatAgain
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class practicePage : Page
+    public sealed partial class qita : Page
     {
-        public practicePage()
+        public qita()
         {
             this.InitializeComponent();
         }
@@ -61,7 +61,15 @@ namespace chatAgain
         {
             if (this.Frame != null)
             {
-                this.Frame.Navigate(typeof(qita));
+                this.Frame.Navigate(typeof(practicePage));
+            }
+        }
+
+        private void qingjing_rec_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (this.Frame != null)
+            {
+                this.Frame.Navigate(typeof(qingjingmoni));
             }
         }
     }

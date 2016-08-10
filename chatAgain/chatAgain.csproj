@@ -120,6 +120,9 @@
     <Compile Include="qingjingmoni.xaml.cs">
       <DependentUpon>qingjingmoni.xaml</DependentUpon>
     </Compile>
+    <Compile Include="qita.xaml.cs">
+      <DependentUpon>qita.xaml</DependentUpon>
+    </Compile>
     <Compile Include="result.xaml.cs">
       <DependentUpon>result.xaml</DependentUpon>
     </Compile>
@@ -142,6 +145,9 @@
     <Content Include="Assets\Projects for Accessbility-09.png" />
     <Content Include="Assets\Projects for Accessbility-11.png" />
     <Content Include="Assets\Projects for Accessbility-12.png" />
+    <Content Include="Assets\sound.PNG" />
+    <Content Include="Assets\其他.png" />
+    <Content Include="Assets\短句.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -185,6 +191,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="qingjingmoni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="qita.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
