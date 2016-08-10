@@ -20,12 +20,13 @@ namespace chatAgain
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class practicePage : Page
+    public sealed partial class qingjingmoni : Page
     {
-        public practicePage()
+        public qingjingmoni()
         {
             this.InitializeComponent();
         }
+
 
         private void HamClick(object sender, RoutedEventArgs e)
         {
@@ -56,12 +57,11 @@ namespace chatAgain
                 }
             }
         }
-
-        private void Rectangle_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Ellipse_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (this.Frame != null)
             {
-                this.Frame.Navigate(typeof(qingjingmoni));
+                this.Frame.Navigate(typeof(MainPage));
             }
         }
     }
