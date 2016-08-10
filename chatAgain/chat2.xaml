@@ -7,6 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <CommonNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+    
     <Grid>
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/Projects for Accessbility-03.png"/>
@@ -24,17 +35,17 @@
                 <ListBox Background="#FF2C2C2C" SelectionMode="Single" Name="ListBox" SelectionChanged="listChange">
                     <ListBoxItem Name="main">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="主页" FontSize="30" Margin="20,0,0,0" FontFamily="Microsoft YaHei" SelectionHighlightColor="{x:Null}" Foreground="#FFFFFF"/>
+                            <TextBlock Text="主页" FontSize="25" Margin="20,0,0,0" FontFamily="Microsoft YaHei" SelectionHighlightColor="{x:Null}" Foreground="#FFFFFF"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="chat">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="实时聊天" FontSize="30" Margin="20,0,0,0" Foreground="#FFFFFF" FontFamily="Microsoft YaHei"/>
+                            <TextBlock Text="实时聊天" FontSize="25" Margin="20,0,0,0" Foreground="#FFFFFF" FontFamily="Microsoft YaHei"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="practice">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="发音训练" FontSize="30" Margin="20,0,0,0" Foreground="#FFFFFF" FontFamily="Microsoft YaHei"/>
+                            <TextBlock Text="发音训练" FontSize="25" Margin="20,0,0,0" Foreground="#FFFFFF" FontFamily="Microsoft YaHei"/>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>

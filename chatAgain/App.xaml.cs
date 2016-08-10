@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -54,6 +55,8 @@ namespace chatAgain
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
+                //"#FF394975"
+                rootFrame.Background = new SolidColorBrush(Color.FromArgb(255,57,73,117));
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
