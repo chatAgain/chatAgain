@@ -134,6 +134,7 @@
     <None Include="chatAgain_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\bofang.png" />
     <Content Include="Assets\button_start-01.png" />
     <Content Include="Assets\button_start-02.png" />
     <Content Include="Assets\pra.mp4" />

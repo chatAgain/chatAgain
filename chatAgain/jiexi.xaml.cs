@@ -57,5 +57,22 @@ namespace chatAgain
                 }
             }
         }
+
+        private void MediaElement_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            vedio.Pause();
+            rec.Visibility = Visibility.Visible;
+        }
+
+        private void rec_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            rec.Visibility = Visibility.Collapsed;
+            vedio.Play();
+        }
+
+        private void vedio_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            rec.Visibility = Visibility.Visible;
+        }
     }
 }

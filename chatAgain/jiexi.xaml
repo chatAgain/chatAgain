@@ -52,7 +52,8 @@
             </SplitView.Pane>
             <SplitView.Content>
                 <Grid>
-                    <MediaElement Height="155" Width="280" Source="Assets/pra.mp4" Margin="40,155,40,0" VerticalAlignment="Top"/>
+                    <MediaElement x:Name="vedio" Height="155" Width="280" Source="Assets/pra.mp4" Margin="40,155,40,0" VerticalAlignment="Top" AutoPlay="False" Tapped="MediaElement_Tapped" MediaEnded="vedio_MediaEnded"/>
+                    <Image x:Name="rec" Height="155" Width="280"  Margin="40,155,40,0" VerticalAlignment="Top" Opacity="0.5" Source="Assets/bofang.png" Tapped="rec_Tapped"/>
                 </Grid>
             </SplitView.Content>
         </SplitView>
