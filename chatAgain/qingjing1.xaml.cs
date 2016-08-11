@@ -35,18 +35,20 @@ namespace chatAgain
             DoubleAnimation da = new DoubleAnimation();
 
             ScaleTransform tt = new ScaleTransform();
-            tt.ScaleY = 0.2;
+            tt.ScaleY = 0;
+            tt.CenterY = 30;
+            tt.CenterX = 177;
             image1.RenderTransform = tt;
 
             Storyboard.SetTarget(da, tt);
             Storyboard.SetTargetProperty(da, "ScaleY");
-            da.From = 0.2;
+            da.From = 0;
             da.To = 1;
             da.AutoReverse=true;
             //da.FillBehavior = FillBehavior.Stop;
             da.RepeatBehavior = RepeatBehavior.Forever;
             
-            da.Duration = new Duration(TimeSpan.FromSeconds(1));
+            da.Duration = new Duration(TimeSpan.FromSeconds(0.5));
             sb.Children.Add(da);
         }
 

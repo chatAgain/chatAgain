@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Phone.UI.Input;
 using Windows.System.Threading;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
@@ -27,12 +28,29 @@ namespace chatAgain
         public chat3()
         {
             this.InitializeComponent();
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
+      private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+      {
 
-        private void HamClick(object sender, RoutedEventArgs e)
-        {
-            SpVi.IsPaneOpen = !SpVi.IsPaneOpen;
+          Windows.Phone.UI.Input.HardwareButtons.BackPressed -=
+              HardwareButtons_BackPressed;
+
+          var rootFrame = Window.Current.Content as Frame;
+
+          rootFrame.Navigate(typeof(chatPage));
+
+          Frame.BackStack.RemoveAt(Frame.BackStack.Count - 1);
+
+          Frame.BackStack.RemoveAt(Frame.BackStack.Count - 1);
+          Frame.BackStack.RemoveAt(Frame.BackStack.Count - 1);
+
+            e.Handled = true;
+        }
+
+      private void HamClick(object sender, RoutedEventArgs e) {
+          SpVi.IsPaneOpen = !SpVi.IsPaneOpen;
         }
 
         private void listChange(object sender, SelectionChangedEventArgs e)

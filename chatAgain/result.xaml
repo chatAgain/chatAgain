@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
 
-    <Page.Transitions>
+    <!--<Page.Transitions>
         <TransitionCollection>
             <NavigationThemeTransition>
                 <NavigationThemeTransition.DefaultNavigationTransitionInfo>
@@ -16,7 +16,7 @@
                 </NavigationThemeTransition.DefaultNavigationTransitionInfo>
             </NavigationThemeTransition>
         </TransitionCollection>
-    </Page.Transitions>
+    </Page.Transitions>-->
 
     <Grid>
         <Grid.Background>
