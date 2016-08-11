@@ -67,6 +67,7 @@
                     <Button x:Name="orangeButton" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="orangeButton_Click" Height="40" >
                         <SymbolIcon Symbol="Send"/>
                     </Button>
+                    <MediaElement Name="sound" Volume="100" AutoPlay="False" Visibility="Collapsed" Source="Assets/sound.mp3"/>
                 </Grid>
             </SplitView.Content>
         </SplitView>

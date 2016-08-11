@@ -83,7 +83,9 @@ namespace chatAgain
             textBox.Text = "";
             image.Visibility = Visibility;
 
-            TimeSpan delay = TimeSpan.FromSeconds(5);
+            sound.Play();
+
+            TimeSpan delay = TimeSpan.FromSeconds(8);
             ThreadPoolTimer DelayTimer =
                 ThreadPoolTimer.CreateTimer(async (source) =>
                 {
