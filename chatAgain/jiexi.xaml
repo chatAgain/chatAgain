@@ -51,7 +51,9 @@
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                <Ellipse Fill="#FFC36464" HorizontalAlignment="Left" Height="84" Margin="140,68,0,0" Grid.Row="1" VerticalAlignment="Top" Width="84" Opacity="0" />
+                <Grid>
+                    <MediaElement Height="245" Width="360" Source="Assets/pra.mp4" Margin="0,154,0,0"/>
+                </Grid>
             </SplitView.Content>
         </SplitView>
     </Grid>

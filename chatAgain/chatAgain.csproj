@@ -136,6 +136,7 @@
   <ItemGroup>
     <Content Include="Assets\button_start-01.png" />
     <Content Include="Assets\button_start-02.png" />
+    <Content Include="Assets\pra.mp4" />
     <Content Include="Assets\Projects for Accessbility-01.png" />
     <Content Include="Assets\Projects for Accessbility-02.png" />
     <Content Include="Assets\Projects for Accessbility-03.png" />
