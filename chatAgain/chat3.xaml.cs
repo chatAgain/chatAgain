@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System.Threading;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -56,6 +58,24 @@ namespace chatAgain
                     this.Frame.Navigate(typeof(MainPage));
                 }
             }
+        }
+
+        private void orangeButton_Click(object sender, RoutedEventArgs e)
+        {
+            textBox.Text = "";
+            image.Visibility = Visibility;
+
+            TimeSpan delay = TimeSpan.FromSeconds(5);
+            ThreadPoolTimer DelayTimer =
+                ThreadPoolTimer.CreateTimer(async (source) =>
+                {
+                    await Dispatcher.RunAsync(CoreDispatcherPriority.High, () =>
+                    {
+                        image2.Visibility = Visibility;
+                    }
+                    );
+
+                }, delay);
         }
     }
 
