@@ -52,7 +52,7 @@
             </SplitView.Pane>
             <SplitView.Content>
                 <Grid>
-                    <MediaElement Height="245" Width="360" Source="Assets/pra.mp4" Margin="0,154,0,0"/>
+                    <MediaElement Height="155" Width="280" Source="Assets/pra.mp4" Margin="40,155,40,0" VerticalAlignment="Top"/>
                 </Grid>
             </SplitView.Content>
         </SplitView>
