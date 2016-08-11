@@ -16,8 +16,8 @@
             </NavigationThemeTransition>
         </TransitionCollection>
     </Page.Transitions>
-    
-    <Grid>
+
+    <Grid x:Name="myGrid">
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/Projects for Accessbility-04.png"/>
         </Grid.Background>
@@ -49,6 +49,26 @@
                     </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
+            <SplitView.Content>
+                <Grid>
+
+                    <Image  x:Name="image" HorizontalAlignment="Left"  VerticalAlignment="Top" Source="Assets/Projects for Accessbility-06.png" Visibility="Collapsed" />
+                    <Image  x:Name="image2" HorizontalAlignment="Left"  VerticalAlignment="Top" Source="Assets/chat3_3.png" Visibility="Collapsed" />
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="40" Width="310" PlaceholderText="" AutomationProperties.AccessibilityView="Content" FontSize="18">
+                            <TextBox.BorderBrush>
+                            <LinearGradientBrush EndPoint="1,1" StartPoint="1,0">
+                                <GradientStop Color="Transparent" Offset="0"/>
+                                <GradientStop Color="Transparent" Offset="0.75"/>
+                                <GradientStop Color="Green" Offset="0.75"/>
+                                <GradientStop Color="Green" Offset="1"/>
+                            </LinearGradientBrush>
+                        </TextBox.BorderBrush>
+                    </TextBox>
+                    <Button x:Name="orangeButton" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="orangeButton_Click" Height="40" >
+                        <SymbolIcon Symbol="Send"/>
+                    </Button>
+                </Grid>
+            </SplitView.Content>
         </SplitView>
     </Grid>
 </Page>
